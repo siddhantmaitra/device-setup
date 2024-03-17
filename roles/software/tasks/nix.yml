@@ -1,0 +1,35 @@
+---
+- name: Check if Nix is installed
+  command: nix --version
+  register: nix_check
+  ignore_errors: true
+
+- name: Download Nix installer script
+  ansible.builtin.get_url:
+    url: https://install.determinate.systems/nix
+    dest: /tmp/nix-installer.sh
+    mode: '0755'  # Make the script executable
+
+- name: Run Nix installer if not installed
+  ansible.builtin.shell:
+    cmd: /tmp/nix-installer.sh install
+  when: nix_check.rc != 0
+  become: true
+
+- name: Check if devbox is installed
+  command: "devbox version"
+  register: devbox_check
+  ignore_errors: true
+
+- name: Download devbox installer script
+  ansible.builtin.get_url:
+    url: https://get.jetpack.io/devbox
+    dest: /tmp/devbox-installer.sh
+    mode: '0755'  # Make the script executable
+
+- name: Run devbox installer script
+  ansible.builtin.shell:
+    cmd: /tmp/devbox-installer.sh
+  when: devbox_check.rc != 0
+  become: true
+
