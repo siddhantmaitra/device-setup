@@ -1,0 +1,7 @@
+# playbook.yml
+---
+- name: Main playbook
+  hosts: all
+  roles:
+    - software
+    - {role: kde_config, when: desktop == 'kde'}

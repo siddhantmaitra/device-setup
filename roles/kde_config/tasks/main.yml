@@ -1,0 +1,13 @@
+---
+
+- name: Import konsave profile
+  ansible.builtin.command: "konsave -i {{ konsave['profile'] }}"
+  register: konsaveout
+
+- name: Apply konsave profile
+  ansible.builtin.command: "konsave -a {{ konsave['name'] }}"
+  register: konsaveout2
+
+- name: change wallpaper
+  ansible.builtin.command: "plasma-apply-wallpaperimage {{ wallpaper }}"
+

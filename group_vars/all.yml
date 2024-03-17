@@ -1,0 +1,20 @@
+---
+
+desktop: kde
+
+aur_packages:
+ - vscodium-bin
+ - obsidian-bin
+ - konsave
+ - foliate
+
+arch_packages:
+ - htop
+ - git
+ - jdk-temurin
+
+konsave:
+  profile: "{{playbook_dir}}/assets/archbox.knsv" 
+  name: archbox
+
+wallpaper: "{{playbook_dir}}/assets/wall.jpg"

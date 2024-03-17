@@ -1,0 +1,14 @@
+---
+- name: Install packages with pacman
+  community.general.pacman:
+    name: "{{ arch_packages }}"
+    state: present
+  become: true
+
+- name: Install packages from AUR
+  community.general.pacman:
+    name: "{{ aur_packages }}"
+    state: present
+    executable: yay
+    extra_args: --noconfirm
+  become: true
