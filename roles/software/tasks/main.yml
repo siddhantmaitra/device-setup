@@ -1,13 +1,18 @@
 ---
-- name: Install packages with pacman
+- name: Install packages using curl
+  ansible.builtin.import_tasks: nix.yml
+
+- name: Install dev packages
   community.general.pacman:
-    name: "{{ arch_packages }}"
+    name: "{{ dev_packages }}"
     state: present
+    executable: yay
+    extra_args: --noconfirm
   become: true
 
-- name: Install packages from AUR
+- name: Install other packages
   community.general.pacman:
-    name: "{{ aur_packages }}"
+    name: "{{ sys_packages }}"
     state: present
     executable: yay
     extra_args: --noconfirm

@@ -1,20 +1,35 @@
 ---
-
 desktop: kde
 
-aur_packages:
- - vscodium-bin
- - obsidian-bin
- - konsave
- - foliate
+sys_packages:
+  - libreoffice-still
+  - pdfarranger
+  - obsidian-bin
+  - konsave
+  - foliate
+  - htop
+  - qbittorrent
 
-arch_packages:
- - htop
- - git
- - jdk-temurin
+dev_packages:
+  - jdk-temurin
+  - maven
+  - neovim
+  - helix
+  - vscodium-bin
+  - fnm-bin
+  - zsh
+  - firefox-developer-edition
+  - chezmoi
+  - kitty
+  - wezterm
+  - docker
+  - kubectl
+  - k9s
+  - kubectx
+  - direnv
 
 konsave:
-  profile: "{{playbook_dir}}/assets/archbox.knsv" 
+  profile: "{{playbook_dir}}/assets/archbox.knsv"
   name: archbox
 
 wallpaper: "{{playbook_dir}}/assets/wall.jpg"
