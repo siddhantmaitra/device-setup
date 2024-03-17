@@ -29,7 +29,7 @@ dev_packages:
   - direnv
 
 konsave:
-  profile: "{{playbook_dir}}/assets/archbox.knsv"
+  profile: "{{playbook_dir}}/assets/curr.knsv"
   name: archbox
 
 wallpaper: "{{playbook_dir}}/assets/wall.jpg"
