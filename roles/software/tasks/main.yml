@@ -1,19 +1,23 @@
 ---
+- name: AUR package preparation
+  ansible.builtin.import_tasks: aur.yml
+
 - name: Install packages using curl
   ansible.builtin.import_tasks: nix.yml
 
-- name: Install dev packages
+- name: Install packages
   community.general.pacman:
-    name: "{{ dev_packages }}"
+    name: "{{ packages }}"
     state: present
-    executable: yay
-    extra_args: --noconfirm
   become: true
 
-- name: Install other packages
-  community.general.pacman:
-    name: "{{ sys_packages }}"
+
+- name: Install packages from AUR
+  kewlfft.aur.aur:
+    name: "{{ aur_packages }}"
     state: present
-    executable: yay
-    extra_args: --noconfirm
+    use: auto
   become: true
+  become_user: aur_builder
+
+

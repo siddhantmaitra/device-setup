@@ -26,10 +26,10 @@
     url: https://get.jetpack.io/devbox
     dest: /tmp/devbox-installer.sh
     mode: '0755'  # Make the script executable
-    
+
 - name: Run devbox installer script
   ansible.builtin.shell:
     cmd: "/tmp/devbox-installer.sh -f"
   when: devbox_check.rc != 0
-  become: true
+  # become: true
 
