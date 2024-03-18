@@ -6,8 +6,11 @@
 - name: Apply konsave profile
   ansible.builtin.command: "konsave -a {{ konsave['name'] }}"
 
+- name: Quit plasmashell
+  ansible.builtin.shell: "kquitapp5 plasmashell"
+
 - name: Reload plasmashell
-  ansible.builtin.shell: "kquitapp5 plasmashell && kstart5 plasmashell"
+  ansible.builtin.shell: "kstart5 plasmashell"
 
 - name: Change wallpaper
   ansible.builtin.command: "plasma-apply-wallpaperimage {{ wallpaper }}"
