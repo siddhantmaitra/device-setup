@@ -20,6 +20,20 @@ packages:
   - maven
   - neovim
   - helix
+  - cowsay
+  - restic
+  - rclone
+  - obs-studio
+  - lf
+  - bat
+  - lazygit
+  - scrcpy
+  - discord
+  - rbw
+  - vagrant
+  - reaper
+  - yabridge
+  - yabridgectl
 
 aur_packages:
   - jdk-temurin
@@ -27,6 +41,13 @@ aur_packages:
   - fnm-bin
   - konsave
   - timg
+  - obsidian-bin
+  - rancher-k3d
+  - bruno-bin
+  - lazydocker-bin
+  - spring-tool-suite
+  - microsoft-edge-bin
+  - bottles
 
 konsave:
   profile: "{{playbook_dir}}/assets/curr.knsv"
