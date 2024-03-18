@@ -1,4 +1,8 @@
 ---
+- name: Check if 'aur_builder' user exists
+  command: id aur_builder
+  register: user_check
+  ignore_errors: yes
 
 - name: Create the `aur_builder` user
   become: yes
@@ -6,6 +10,7 @@
     name: aur_builder
     create_home: yes
     group: wheel
+  when: user_check.rc != 0 
 
 - name: Allow the `aur_builder` user to run `sudo pacman` without a password
   become: yes
@@ -15,3 +20,4 @@
     create: yes
     mode: 0644
     validate: 'visudo -cf %s'
+  when: user_check.rc != 0 

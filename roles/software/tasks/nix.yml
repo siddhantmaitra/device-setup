@@ -9,6 +9,7 @@
     url: https://install.determinate.systems/nix
     dest: /tmp/nix-installer.sh
     mode: '0755'  # Make the script executable
+  when: nix_check.rc != 0
 
 - name: Run Nix installer if not installed
   ansible.builtin.shell:
@@ -26,6 +27,7 @@
     url: https://get.jetpack.io/devbox
     dest: /tmp/devbox-installer.sh
     mode: '0755'  # Make the script executable
+  when: devbox_check.rc != 0
 
 - name: Run devbox installer script
   ansible.builtin.shell:

@@ -2,7 +2,7 @@
 - name: AUR package preparation
   ansible.builtin.import_tasks: aur.yml
 
-- name: Install packages using curl
+- name: Install nix packages using curl
   ansible.builtin.import_tasks: nix.yml
 
 - name: Install packages
