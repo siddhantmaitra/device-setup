@@ -16,6 +16,12 @@ Ansible scripts to setup my EndeavourOS machines
 
 
 ## Demo 
-![demovid](assets/demo.mp4)
+Quick demo run of the `setup.sh` script when everything is installed.
+https://github.com/siddhantmaitra/device-setup/assets/65553994/cd1cff30-7294-452b-9e1a-c6afffe10e45
+
+
+
+
+
 
 
