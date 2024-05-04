@@ -46,7 +46,8 @@ aur_packages:
   - bruno-bin
   - lazydocker-bin
   - spring-tool-suite
-  - microsoft-edge-bin
+  - microsoft-edge-dev-bin
+  - brave-bin
   - bottles
 
 konsave:
