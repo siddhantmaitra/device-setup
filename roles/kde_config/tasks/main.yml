@@ -11,7 +11,7 @@
 
 - name: Reload plasmashell
   ansible.builtin.shell: "kstart plasmashell && sleep 5"
-
-- name: Change wallpaper
-  ansible.builtin.command: "plasma-apply-wallpaperimage {{ wallpaper }}"
-
+#
+#- name: Change wallpaper
+#  ansible.builtin.command: "plasma-apply-wallpaperimage {{ wallpaper }}"
+#

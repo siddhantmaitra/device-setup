@@ -51,7 +51,7 @@ aur_packages:
   - bottles
 
 konsave:
-  profile: "{{playbook_dir}}/assets/curr.knsv"
-  name: curr
+  profile: "{{playbook_dir}}/assets/profile2024-12-10.knsv"
+  name: profile2024-12-10
 
-wallpaper: "{{playbook_dir}}/assets/wall.jpg"
+wallpaper: "{{playbook_dir}}/assets/howl049.jpg"
