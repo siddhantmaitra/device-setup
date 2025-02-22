@@ -11,16 +11,11 @@ packages:
   - firefox-developer-edition
   - chezmoi
   - kitty
-  - wezterm
   - docker
-  - kubectl
-  - k9s
-  - kubectx
   - direnv
   - maven
   - neovim
   - helix
-  - cowsay
   - restic
   - rclone
   - obs-studio
@@ -28,9 +23,6 @@ packages:
   - bat
   - lazygit
   - scrcpy
-  - discord
-  - rbw
-  - vagrant
   - reaper
   - yabridge
   - yabridgectl
@@ -42,13 +34,10 @@ aur_packages:
   - konsave
   - timg
   - obsidian-bin
-  - rancher-k3d
   - bruno-bin
   - lazydocker-bin
-  - spring-tool-suite
   - microsoft-edge-dev-bin
   - brave-bin
-  - bottles
 
 konsave:
   profile: "{{playbook_dir}}/assets/profile2024-12-10.knsv"
