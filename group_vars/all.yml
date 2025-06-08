@@ -11,9 +11,10 @@ packages:
   - firefox-developer-edition
   - chezmoi
   - kitty
+  - ghostty
   - docker
+  - podman
   - direnv
-  - maven
   - neovim
   - helix
   - restic
@@ -26,21 +27,23 @@ packages:
   - reaper
   - yabridge
   - yabridgectl
+  - syncthing
+  - zoxide
 
 aur_packages:
-  - jdk-temurin
   - vscodium-bin
-  - fnm-bin
   - konsave
   - timg
-  - obsidian-bin
+  - obsidian
   - bruno-bin
   - lazydocker-bin
   - microsoft-edge-dev-bin
   - brave-bin
+  - rate-mirrors
+  - fastfetch
 
 konsave:
   profile: "{{playbook_dir}}/assets/profile2024-12-10.knsv"
-  name: profile2024-12-10
+  name: profile2025-06-09
 
 wallpaper: "{{playbook_dir}}/assets/howl049.jpg"
