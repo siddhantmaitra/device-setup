@@ -8,6 +8,8 @@
   ansible.builtin.get_url:
     url: https://install.determinate.systems/nix
     dest: /tmp/nix-installer.sh
+    follow_redirects: "all"
+    force: true
     mode: '0755'  # Make the script executable
   when: nix_check.rc != 0
 
