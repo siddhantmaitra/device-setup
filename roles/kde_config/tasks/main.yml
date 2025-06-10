@@ -1,7 +1,7 @@
 ---
 
 - name: Import konsave profile
-  ansible.builtin.command: "konsave -i {{ konsave['profile'] }}"
+  ansible.builtin.command: "konsave -i {{playbook_dir}}/assets/{{konsave['name']}}.knsv"
 
 - name: Apply konsave profile
   ansible.builtin.command: "konsave -a {{ konsave['name'] }}"

@@ -43,7 +43,6 @@ aur_packages:
   - fastfetch
 
 konsave:
-  profile: "{{playbook_dir}}/assets/profile2024-12-10.knsv"
-  name: profile2025-06-09
+  name: profile2025-06-11
 
 wallpaper: "{{playbook_dir}}/assets/howl049.jpg"
