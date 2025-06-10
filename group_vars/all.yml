@@ -13,8 +13,6 @@ packages:
   - kitty
   - ghostty
   - docker
-  - podman
-  - direnv
   - neovim
   - helix
   - restic
@@ -29,6 +27,14 @@ packages:
   - yabridgectl
   - syncthing
   - zoxide
+  - powertop
+  - rbw
+  - age
+  - teeldear
+  - nmap
+  - android-tools
+  - jq
+  - yq
 
 aur_packages:
   - vscodium-bin
@@ -41,8 +47,8 @@ aur_packages:
   - brave-bin
   - rate-mirrors
   - fastfetch
+  - freefilesync-bin
+  - doggo-bin
 
 konsave:
   name: profile2025-06-11
-
-wallpaper: "{{playbook_dir}}/assets/howl049.jpg"
