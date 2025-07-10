@@ -37,6 +37,7 @@ packages:
   - yq
   - libheif # for heic
   - kimageformats
+  - ncdu
 
 aur_packages:
   - vscodium-bin
