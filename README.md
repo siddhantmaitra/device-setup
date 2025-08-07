@@ -14,7 +14,7 @@ Ansible scripts to setup my EndeavourOS machines
 - Uses `chezmoi` and `ansible` for complete setup
 - Download and run this [script](https://github.com/siddhantmaitra/scripts/blob/main/working/setup.sh).
 
-OR
+### One-liner installation
 
 ```sh
 curl https://www.smaitra.com/archbox | bash
