@@ -38,6 +38,8 @@ packages:
   - libheif # for heic
   - kimageformats
   - ncdu
+  - img2pdf
+  - tailscale
 
 aur_packages:
   - vscodium-bin
@@ -53,6 +55,7 @@ aur_packages:
   - freefilesync-bin
   - doggo-bin
   - legcord-bin
+  - v4l2loopback-dkms-git # for webcam
 
 konsave:
   name: profile2025-06-11
